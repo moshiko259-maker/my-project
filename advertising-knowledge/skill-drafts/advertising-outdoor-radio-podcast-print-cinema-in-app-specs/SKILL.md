@@ -51,6 +51,8 @@ Israel: radio ads on regional stations and Kan follow the Israeli rules in the I
 | Host-read ads | arranged through a Spotify representative | ads.spotify.com podcast specs |
 | Apple Podcasts loudness | about -16 dB LKFS (+/-1 dB), true peak not above -1 dB FS | podcasters.apple.com/support/893-audio-requirements |
 | Megaphone | MP3, 44.1 kHz or higher, -16 LUFS recommended, ads match the episode's stereo / mono | support.megaphone.fm article 1561164 |
+| Acast | 30-second advertiser-made audio ads; all ads normalised to -18 LUFS; host-read sponsorship messages are not normalised | learn.acast.com glossary (21 Sep 2026) |
+| Ad types (IAB Podcast Measurement v2.3, September 2026) | integrated = host-read or static, baked into the episode, everyone gets the same ad; dynamically inserted = targeted and inserted when the episode is requested | iabtechlab.com podcast measurement guidelines |
 Note: broadcast radio (-23 LUFS) and podcast (-16 LUFS) need two different mixes.
 
 ## 4. Cinema
@@ -62,6 +64,7 @@ Note: broadcast radio (-23 LUFS) and podcast (-16 LUFS) need two different mixes
 | Pearl and Dean Ireland | 1998x1080, 24 fps, 5.1, max 82 Leq(m), lead time 5-10 working days | pearlanddean.ie spec 2026 (VENDOR) |
 | Screenvision (US) pre-show | ProRes 422 HQ, 1920x1080, 24 fps, stereo or 5.1, 78 Leq(m); trailer position 82 Leq(m) and both flat 1998x1080 and scope 2048x858 | Screenvision 2024 spec (VENDOR) |
 | NCM (US) | ProRes 422 HQ 1920x1080 at 23.976, 5.1; not above -24 LKFS, peaks not above -10 dBFS | ncm.com spec PDFs (VENDOR) |
+Trailers have a separate limit: 85 Leq(m) (TASA). Ads: 82 Leq(m), cited by two cinema ad sellers from the SAWA standard (the SAWA document itself was not opened).
 Meaning: cinema needs a 24 fps master, a real 5.1 mix and its own loudness measure (Leq(m)) - plan it before the mix, not after.
 
 ## 5. In-app and playable ads
@@ -80,21 +83,28 @@ A playable needs three separate builds for Unity, AppLovin and Meta. Sources: do
 | UK on AI | "no blanket legal requirement in the UK to disclose the use of AI in ads"; the test is whether the audience would be misled | asa.org.uk, 29 May 2025 |
 | US (FTC Endorsement Guides, 2023) | an endorser may "be or appear to be an individual, group, or institution" - covers virtual influencers; disclosure must be "difficult to miss" | Federal Register 88 FR 48092 |
 | EU | brand partnerships, free products and affiliate marketing must be disclosed | commission.europa.eu influencer legal hub |
+| EU AI Act Article 50 (official text on eur-lex; applies from 2 August 2026) | whoever deploys AI content that is a deep fake - content that resembles existing persons, objects, places or events and would falsely appear authentic - must disclose that it was artificially generated or manipulated; for evidently artistic, creative or fictional work the disclosure may be made in a way that does not hamper the work. Fines up to EUR 15 million or 3% of turnover. Relevant only when people in the EU see the ad; details -> ai-video-legal-consent-labels | Regulation (EU) 2024/1689, Art. 3(60), 50, 99 |
 | Platform tools | Instagram: paid partnership label; TikTok: commercial content disclosure setting; YouTube: paid promotion box | platform help pages |
 | TikTok Spark Ads | the brand runs the creator's post with the creator's authorization code; agree the code's duration in the contract | ads.tiktok.com/help/article/spark-ads |
 Israel: a publication that looks like editorial content without a clear advertisement mark is deemed misleading (Consumer Protection Law s.7, read on a community copy of the law).
 
-## 7. Print - NOT RESEARCHED
-No print facts were collected. Ask the publication or printer for its spec sheet (file type, colour profile, resolution, bleed) and do not quote numbers from memory.
+## 7. Print - basics (read 21 Nov 2026 by a gap-fill researcher; not re-read by a verifier)
+| Item | Value | Source |
+|---|---|---|
+| File standard | PDF/X-1a (ISO 15930-1 and -4): CMYK only, no transparency. PDF/X-4 (ISO 15930-7): colour-managed, transparency allowed | US Library of Congress format pages |
+| Bleed | 3 mm outside the trim line (UK) / 0.125 inch (US) | one printer's two country sites |
+| Total ink limit | coated offset Europe (FOGRA51) 300%; GRACoL 320%; SWOP 300%; newsprint 240% | ICC profile registry |
+| Resolution | magazines: photos 300 dpi at actual size, line art 600 dpi; newspapers: 200-300 dpi depending on the publisher | single publishers' spec sheets |
+| Colour | CMYK; the profile is named by the publication | same |
+Always ask the publication or printer for its own sheet: profile, ink limit, resolution and ad sizes differ. Standard ad unit names: no standards list was found.
 
 ## General rule - recommend then teach
 For any creative request first run `creative-request-advisor-tools-models-prices-then-teach-steps`: show the tool and model options (cheapest, most expensive, best quality, best value, free alternative) with live prices, commercial rights and one pick; wait for Moshe's choice; then guide him with the exact tool, settings and numbered steps from this skill.
 
 ## Open questions - verify before use
 1. Israeli outdoor, radio and cinema media owners' specs.
-2. Print.
-3. EU AI Act transparency duties for synthetic people (official text not read).
-4. Podcast host-read practice and measurement guidelines.
+2. Print rows rest on single publishers and one printer; standard ad unit names not found.
+3. Talent and voice-over usage fees: union rate sheets exist for the US only; no Israeli equivalent found.
 
 ## Lessons learned
 - 21 Nov 2026: each medium has its own loudness measure (LUFS for broadcast and podcast, Leq(m) for cinema); a single mix cannot serve all.

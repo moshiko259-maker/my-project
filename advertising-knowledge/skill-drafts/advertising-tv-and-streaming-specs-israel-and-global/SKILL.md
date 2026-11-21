@@ -33,7 +33,8 @@ Owns: file and delivery specs for linear TV and streaming / connected TV. YouTub
 | Roku Ads Manager | 6-92 seconds (general Roku guidelines: :15 or :30, :60 by exception) | .mov or .mp4; 16:9; 23.98 / 25.00 / 29.97; AVC or ProRes 422 HQ; min 6 Mbps | PCM preferred, AAC accepted, min 96 kbps, stereo, 48 kHz | max 1 GB; review 2-3 business days | help.ads.roku.com/en/articles/7154647-creative-guidelines |
 | Paramount Ads Manager | :15 or :30 | min 1280x720, 16:9; mp4 H.264 preferred or ProRes 422 / HQ; progressive; min 6 Mbps; 23.98-30 fps | AAC stereo, min 192 kbps, 48 kHz; -24 LUFS +/-2 (ATSC A/85); peak never above -6 dB | max 10 GB; no slates, no black bars | adsmanager.paramount.com/resources/tech-specs |
 | Samsung Ads (DSP) | 5-90 seconds, 15-30 recommended | MP4 H.264; 16:9; 1920x1080 recommended, min 1280x720; 5-10 Mbps; 30 fps recommended | AAC or MP3 | max 50 MB, 30 MB recommended | help.dsp.samsungads.com/docs/video |
-| Peacock / NBCU, Max | UNKNOWN - official pages could not be opened | | | | - |
+| Peacock (as republished by an ad-buying partner, single source, updated 2 Nov 2026) | 15 or 30 seconds | .mov or .mp4; 16:9; 1920x1080 preferred; ProRes 422 HQ or H.264; 15-30 Mbps at 1080p; 23.98-30 fps progressive | 2-channel, 48 kHz, min 192 kbps; -24 LKFS +/-2 | 10 GB | help.vibe.co article 9735845 (PARTNER, not NBCU's own page) |
+| Max / HBO Max | no advertiser spec found | | | | UNKNOWN |
 
 IAB Tech Lab guideline for digital video and connected TV (PDF "Released August 2022"): typical lengths 6, 15, 30 seconds (bumpers 3-10, also 60); mezzanine 1920x1080 or 1280x720, 16:9, progressive, no slate, no burned-in boxing; audio -24 LKFS (+/-2) in the US, -23 LUFS (+/-1) in the EU, peaks not above -6 dB true peak. Source: iabtechlab.com/wp-content/uploads/2022/03/Ad-Format-Guidelines_DV-CTV.pdf
 

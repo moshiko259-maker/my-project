@@ -51,7 +51,8 @@ Keep text, logos and key elements out of: top 14%, bottom 35%, 6% on each side. 
 | Spark Ads (boosting a creator's or brand's organic post) | no spec limits, the organic post must be 10 minutes or less; needs the creator's authorization code; caption comes from the post (4 lines shown) |
 | Carousel | 2 to 35 images, JPG or PNG; music is mandatory |
 | Profile | account name max 20 characters; photo 98x98 px under 50 KB |
-Safe zone: TikTok publishes no percentages - only downloadable templates, including a right-to-left version; the zone shrinks as the caption gets longer.
+Safe zone: TikTok publishes no percentages - only downloadable templates, including a right-to-left version; the zone shrinks as the caption gets longer. Measured from TikTok's own in-feed template (2880x5120) and scaled to 1080x1920: keep content inside margins of 120 px left, 120 px right, 240 px top, 660 px bottom (the researcher measured the file's clear area; a community guide gives the same numbers).
+Caption: no hard character cap is published; at most 4 lines are shown; TikTok suggests keeping captions within 100 characters (50 for Chinese, Japanese, Korean).
 Music: a business may not use the general music library; use the Commercial Music Library (pre-cleared, free).
 AI content: significantly edited or AI-generated media is allowed only with the AIGC label or a clear disclaimer, caption, watermark or sticker; undisclosed AI content gets the ad "rejected or restricted" (policy page dated November 2026).
 Claims: no promised or exaggerated results, no "Number 1" absolutes, no before-and-after comparisons, price must match the landing page.
@@ -83,7 +84,9 @@ AI label: since July 2026 Google lets advertisers add an AI label inside the cre
 ## 5. Pinterest and LinkedIn
 - Pinterest: image 2:3 at 1000x1500, title up to 100 characters; video MP4 / MOV / M4V up to 2 GB, 4 seconds to 15 minutes, 6-15 seconds recommended.
 - LinkedIn video: MP4, 75 KB to 500 MB, 3 seconds to 30 minutes (15-30 seconds recommended), under 30 fps; 4:5 recommended; captions as SRT.
-- Snapchat, X, Reddit: only search snippets were seen - UNVERIFIED, open the official page before use.
+- Snapchat (forbusiness.snapchat.com ad formats; read 21 Nov 2026): single image or video ad .mp4 .mov .jpg .png, 9:16, 720x1280 minimum (1080x1920 in the developer docs), 3-180 seconds; brand name up to 25 characters, headline up to 34. Sponsored Snaps: keep under 10 seconds.
+- Reddit (business.reddit.com video ads): MP4 or MOV up to 1 GB; 1:1, 4:5 or 16:9; up to 15 minutes, 60 seconds or less recommended; Reddit advises 4:5 for mobile and under 10 seconds. Images JPEG or PNG up to 20 MB.
+- X (developer docs): promoted video up to 10 minutes and 500 MB, mp4 or mov; the business help page with full specs could not be opened.
 
 ## 6. Export set for one campaign (INFERENCE from the tables)
 1. 9:16 at 1080x1920 with text inside the Meta safe zone (the strictest percentages) - serves Reels, Stories, TikTok, Shorts.
@@ -97,7 +100,7 @@ For any creative request first run `creative-request-advisor-tools-models-prices
 
 ## Open questions - verify before use
 1. TikTok in-feed caption character limit and safe zone in pixels.
-2. Snapchat, X and Reddit specs.
+2. X full ad specs and Reddit headline limit; Snapchat's two official pages disagree on brand-name length (25 vs 32) and resolution.
 3. Whether YouTube's viewer-facing AI label appears on a video served as a paid ad.
 
 ## Lessons learned

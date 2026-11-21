@@ -21,6 +21,7 @@ Updated: 20 Nov 2026. Status column: PLANNED / DRAFT / VERIFIED.
 | knowledge/13-learning-sources-and-video-lessons.md | Academies, teachers, lessons from 8 videos read in full (files 13 and 14 merged) | DRAFT |
 | knowledge/14-expert-lessons-cinematic-ai-commercials-effectiveness-craft.md | 9 transcripts read in full + 10 written expert sources + re-check of file 07 | DRAFT, tagged per item |
 | knowledge/15-verification-log.md | Verifier results: fact, source, date, pass/fail | current |
+| knowledge/16-gap-fill-firefly-streaming-snap-x-reddit-tiktok-print-cinema-eu-ai-act-podcast-talent.md | Platform and tool gaps filled from alternative sources | DRAFT, tagged per row |
 | research-raw/ | Raw sub-agent reports R1a R1b R1c R1d R2 R3 R4a R4b R5 R6 (unverified) + COMMON_BRIEF.md | 10 of 10 saved |
 | ../advertising-studio/ | Production system: CLAUDE.md, tools, templates, workflows, model-registry, documentation | built 21 Nov 2026 |
 | ../.claude/agents, ../.claude/skills | 8 agents, 17 studio skills | built, structure-validated |
