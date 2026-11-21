@@ -223,3 +223,11 @@ B10. Local business ads - MNTN Research https://research.mountain.com/creative-a
 - lbbonline.com: HTTP 403. contagious.com (two articles): paywall shell. marketingscience.info: marketing text only.
 - Not obtained: exact titles and upload dates for A1-A4; lengths for A6-A9; the 47% creative figure often attributed to the Nielsen article (not in the page text); Ipsos multipliers (in the PDF, not opened).
 - Not covered: ASC and No Film School articles; a written source on sound design for commercials; any 2026 video on small-business ads; Hebrew sources.
+
+## Retry on 21 Nov 2026, about 08:15 UTC - no video read
+YouTube's embed page loaded again but refused playback twice (player error 150, code "auth": it asks for a signed-in session from this network). The agent stopped after two tries, as instructed; nothing was worked around. Confirmed from the player's own metadata only:
+- "PJ Ace: Full AI Film Production Workshop | Wonder Sessions" - Wonder Studios - about 76 minutes - https://www.youtube.com/watch?v=ttgNFJ25xfU - NOT READ
+- "How To Create Cinematic AI Ads - Full AI Video Course" - Dan Kieft - about 16 minutes - https://www.youtube.com/watch?v=sMNjQ2Gks_4 - NOT READ
+Also still NOT READ: Runway Academy "AI for Advertising" modules, official Higgsfield ad tutorials, StudioBinder / Film Riot / Wolfcrow craft videos, a 2026 local-business ad video.
+Method note: the bare embed URL no longer works alone (the player now needs a parent page), and with a parent page playback is refused from this cloud network.
+Ways forward that stay inside the rules: the owner opens the video in his own browser, uses YouTube's "Show transcript" panel, and pastes the text; or the session runs on his computer, where his normal browser session is available with his approval.
