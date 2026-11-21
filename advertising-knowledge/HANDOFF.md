@@ -77,3 +77,9 @@ LESSONS
 - Never instruct an agent to get around a site's bot block: the request is refused, and the block is the site owner's decision.
 - Save every sub-agent report to the repository immediately; the worker restarted several times and only pushed files survived.
 - The owner's saved skills must not be copied in full into this public repository; edit lists hold only a short anchor and the new text.
+
+## Addendum, later on 21 Nov 2026
+- Gap-fill round done: knowledge files 06 (Israel), 14 (expert lessons), 16 (platforms and tools); skills updated from them.
+- Skill upload route VERIFIED on the official support page (Customize > Skills > Upload a skill; ZIP containing the skill folder; folder name = skill name). Eight upload-ready archives: advertising-knowledge/ready-to-upload-skill-zips/. Whether uploading replaces an existing skill of the same name is UNKNOWN - edits to saved skills still go through save cards.
+- Owner wants everything on his computer: a full package (work files + a private backup of his saved skills as synced on 20 Nov 2026) was sent to him as a download; the saved-skill copies are NOT in this repository. Hebrew guide: advertising-knowledge/START-HERE-HEBREW-GUIDE.md.
+- YouTube refused all requests on 21 Nov 2026 (429 / unplayable); do not retry in a loop. gov.il service pages refuse automated access, but files under gov.il/BlobFolder open normally.
