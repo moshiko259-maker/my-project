@@ -1,0 +1,6 @@
+[
+ {
+  "old_string": "- 17 Nov 2026 update: OFFICIAL help integrations/how-do-i-connect-higgsfield-to-ai-agent, how-do-i-use-katana (29 Oct), how-do-i-access-higgsfield-via-cli; changelog (re-fetched); live MCP server instructions (17 Nov); live button map 16 Nov (Short Drama, Supercomputer \"/\" list); conflicts-resolved items 8, 9, 11, 108-110, 112, 117, 126, 134, 148, 149.",
+  "new_string": "- 17 Nov 2026 update: OFFICIAL help integrations/how-do-i-connect-higgsfield-to-ai-agent, how-do-i-use-katana (29 Oct), how-do-i-access-higgsfield-via-cli; changelog (re-fetched); live MCP server instructions (17 Nov); live button map 16 Nov (Short Drama, Supercomputer \"/\" list); conflicts-resolved items 8, 9, 11, 108-110, 112, 117, 126, 134, 148, 149.\n\n## General rule - recommend then teach\nFor any creative request first run `creative-request-advisor-tools-models-prices-then-teach-steps`: show the tool and model options (cheapest, most expensive, best quality, best value, free alternative) with live prices, commercial rights and one pick; wait for Moshe's choice; then guide him with the exact tool, settings and numbered steps from this skill."
+ }
+]

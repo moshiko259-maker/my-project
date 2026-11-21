@@ -1,0 +1,6 @@
+[
+ {
+  "old_string": "- VENDOR blog higgsfield.ai/blog/ : micro-drama-ads-higgsfield-ads-studio (6 Nov) ; higgsfield-ads-studio (1 Oct) ; ad-multiplier-ads-studio (6 Oct) ; tiktok-shop-product-videos-a (14 Nov) ; video-ads-small-business-ai (8 Oct) ; ai-ecommerce-ads-2026 (9 Nov)",
+  "new_string": "- VENDOR blog higgsfield.ai/blog/ : micro-drama-ads-higgsfield-ads-studio (6 Nov) ; higgsfield-ads-studio (1 Oct) ; ad-multiplier-ads-studio (6 Oct) ; tiktok-shop-product-videos-a (14 Nov) ; video-ads-small-business-ai (8 Oct) ; ai-ecommerce-ads-2026 (9 Nov)\n\n## General rule - recommend then teach\nFor any creative request first run `creative-request-advisor-tools-models-prices-then-teach-steps`: show the tool and model options (cheapest, most expensive, best quality, best value, free alternative) with live prices, commercial rights and one pick; wait for Moshe's choice; then guide him with the exact tool, settings and numbered steps from this skill."
+ }
+]

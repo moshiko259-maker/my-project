@@ -1,0 +1,6 @@
+[
+ {
+  "old_string": "- docs.meshy.ai image-to-3d; fal.ai llms.txt (meshy v7, tripo h3.1, hunyuan3d-v3); 3daistudio tripo-p2; ai.meta.com sam-3d; comfyui-wiki - COMMUNITY",
+  "new_string": "- docs.meshy.ai image-to-3d; fal.ai llms.txt (meshy v7, tripo h3.1, hunyuan3d-v3); 3daistudio tripo-p2; ai.meta.com sam-3d; comfyui-wiki - COMMUNITY\n\n## General rule - recommend then teach\nFor any creative request first run `creative-request-advisor-tools-models-prices-then-teach-steps`: show the tool and model options (cheapest, most expensive, best quality, best value, free alternative) with live prices, commercial rights and one pick; wait for Moshe's choice; then guide him with the exact tool, settings and numbered steps from this skill."
+ }
+]

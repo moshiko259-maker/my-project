@@ -1,0 +1,6 @@
+[
+ {
+  "old_string": "When Blender MCP is connected, prefer learning by doing: he states the goal in Hebrew, you show the English prompt you would use, run it only after he agrees, take a screenshot, and ask him what he sees. Then show one line of the generated Python and explain it simply.",
+  "new_string": "When Blender MCP is connected, prefer learning by doing: he states the goal in Hebrew, you show the English prompt you would use, run it only after he agrees, take a screenshot, and ask him what he sees. Then show one line of the generated Python and explain it simply.\n\n## General rule - recommend then teach\nFor any creative request first run `creative-request-advisor-tools-models-prices-then-teach-steps`: show the tool and model options (cheapest, most expensive, best quality, best value, free alternative) with live prices, commercial rights and one pick; wait for Moshe's choice; then guide him with the exact tool, settings and numbered steps from this skill."
+ }
+]

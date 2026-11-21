@@ -1,0 +1,6 @@
+[
+ {
+  "old_string": "- 17 Nov 2026 update: OFFICIAL changelog (re-fetched), help supercomputer (re-fetched), apps, canvas, popcorn, external integrations, CLI; enterprise help tools-creative-workflow (1 Nov), sso-security (6 Oct); live button map 16 Nov; VENDOR supercomputer-intro, blogs content-factory, faceless-studio, mangaka, ai-games, chat-social-network; Academy ai-creation lessons 1-3; COMMUNITY aliteq (12 Nov).",
+  "new_string": "- 17 Nov 2026 update: OFFICIAL changelog (re-fetched), help supercomputer (re-fetched), apps, canvas, popcorn, external integrations, CLI; enterprise help tools-creative-workflow (1 Nov), sso-security (6 Oct); live button map 16 Nov; VENDOR supercomputer-intro, blogs content-factory, faceless-studio, mangaka, ai-games, chat-social-network; Academy ai-creation lessons 1-3; COMMUNITY aliteq (12 Nov).\n\n## General rule - recommend then teach\nFor any creative request first run `creative-request-advisor-tools-models-prices-then-teach-steps`: show the tool and model options (cheapest, most expensive, best quality, best value, free alternative) with live prices, commercial rights and one pick; wait for Moshe's choice; then guide him with the exact tool, settings and numbered steps from this skill."
+ }
+]

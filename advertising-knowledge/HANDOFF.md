@@ -1,6 +1,6 @@
 # HANDOFF - advertising knowledge base and skill system
 
-Last update: 20 Nov 2026 (session 1). Status (21 Nov 2026): wave 1 research done; 10 raw reports saved, UNVERIFIED. Advertising studio system built in advertising-studio/ + .claude/. Waves 2-5 not started.
+Last update: 21 Nov 2026 (end of session 1). Status: research done and partly verified; studio system built and partly tested; 8 new account skills drafted; 108 proven edit lists built. NOT done: save cards (need a claude.ai chat), the acceptance-test ad (needs the owner's Downloads folder).
 
 ## What this job is
 Build a verified knowledge base + skills for advertising in all media, and a general
@@ -57,3 +57,23 @@ Raw reports go to research-raw/ as they arrive. A report NOT in research-raw/ = 
   3. System build (done): 8 agents in .claude/agents, 17 skills in .claude/skills, tools/studio.py gates, templates, registry, docs. See advertising-studio/CLAUDE.md and documentation/test-results.md (what was and was NOT tested).
   4. AFTER all research and skills are finished: a surprise gift ad for a business whose material is in the folder named "דיגיטלי" inside his Downloads folder (offers, reports, photos from their site). He cannot contact them before delivery. Wants several ideas, a full drawn storyboard with images, improved photos, a cinematic ad, model and platform recommendation with commercial licence checked. This is the acceptance test of the whole system. BLOCKED until that folder is reachable (share it through Remote Control or run the session on his computer). Spec-ad cautions apply: no consent from the business, their trademarks and photos, truth gate - see ai-advertising-director "Spec-ad rule" and ai-video-legal-consent-labels.
 - Usage note: the 5-hour usage limit was hit once with 10 agents in parallel; run fewer agents at a time.
+
+## State at end of session 1 (21 Nov 2026) - read this first
+DONE
+- 10 raw research reports (research-raw/), 11 knowledge files (knowledge/), 3 verifier reports (verification/): 304 rows re-read, 286 PASS, 4 CHANGED, 1 FAIL corrected. Log: knowledge/15-verification-log.md.
+- Account skills, drafted and validated with publisher script A: skill-drafts/<name>/SKILL.md (8 skills).
+- General-rule section: 108 one-edit lists in skill-drafts/edits/, each proven; list and sizes in skill-drafts/EDITS-INDEX.md; rounds in skill-drafts/ROUNDS-PLAN.md (39 rounds).
+- Studio system: advertising-studio/ + .claude/agents (8) + .claude/skills (17) + .claude/settings.json (31 ask rules). Tests: documentation/test-results.md.
+NOT DONE
+1. Save cards: open a claude.ai chat (it has the card tool), load skill-cards-publisher, and publish rounds 1-39 from skill-drafts/. Re-prove each edit against the current saved skill first.
+2. Requested skill name was 68 characters; drafts use creative-request-advisor-tools-models-prices-then-teach-steps (61). Owner informed.
+3. Acceptance test: the surprise gift ad from the owner's Downloads folder "דיגיטלי" - blocked until the folder is reachable. Start with `claude --agent executive-producer`.
+4. Not verified / unknown (do not present as fact): Israeli tax figures on official pages; Israeli channels' delivery specs; Adobe Firefly; Disney+, NBCU, Max specs; Snapchat, X, Reddit; print; rows tagged DRAFT in files 07, 09, 11, 13.
+5. Studio: delegation from the executive-producer itself, six of seven specialists, permission prompts and live model selection are untested. The model registry has verified rights and costs for Higgsfield only; no capability scores.
+6. Prices read on 21 Nov 2026 include Black Friday promotions; re-check live.
+LESSONS
+- 10 agents in parallel exhausted the 5-hour usage limit; run 3 at a time. Agents can be resumed with SendMessage after the limit resets.
+- WebFetch does not work in this cloud environment even with unrestricted network; agents must use curl or the headless browser.
+- Never instruct an agent to get around a site's bot block: the request is refused, and the block is the site owner's decision.
+- Save every sub-agent report to the repository immediately; the worker restarted several times and only pushed files survived.
+- The owner's saved skills must not be copied in full into this public repository; edit lists hold only a short anchor and the new text.

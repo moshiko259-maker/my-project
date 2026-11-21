@@ -1,0 +1,6 @@
+[
+ {
+  "old_string": "- 17 Nov 2026 update: OFFICIAL help integrations/* (24 Sep); enterprise help platform/integrations (6 Oct); changelog (re-fetched 17 Nov); Anthropic custom-connector help (via conflicts-resolved 126); VENDOR blog higgsfield-cli, higgsfield-davinci-resolve, higgsfield-after-effects, higgsfield-figma-plugin, generate-ai-videos-chatgpt-2026, automate-ai-video-n8n-make; conflicts-resolved items 11, 81, 87, 88, 89, 126, 133, 149.",
+  "new_string": "- 17 Nov 2026 update: OFFICIAL help integrations/* (24 Sep); enterprise help platform/integrations (6 Oct); changelog (re-fetched 17 Nov); Anthropic custom-connector help (via conflicts-resolved 126); VENDOR blog higgsfield-cli, higgsfield-davinci-resolve, higgsfield-after-effects, higgsfield-figma-plugin, generate-ai-videos-chatgpt-2026, automate-ai-video-n8n-make; conflicts-resolved items 11, 81, 87, 88, 89, 126, 133, 149.\n\n## General rule - recommend then teach\nFor any creative request first run `creative-request-advisor-tools-models-prices-then-teach-steps`: show the tool and model options (cheapest, most expensive, best quality, best value, free alternative) with live prices, commercial rights and one pick; wait for Moshe's choice; then guide him with the exact tool, settings and numbered steps from this skill."
+ }
+]
