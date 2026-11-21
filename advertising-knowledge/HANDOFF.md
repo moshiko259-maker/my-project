@@ -88,3 +88,10 @@ LESSONS
 - The owner uploaded all 8 new account skills himself (ZIP upload). Verified: each synced copy is identical to its draft. Rounds 1-3 are DONE. If a draft changes after this point, the saved skill must be updated again (upload-replace behaviour still unknown - check with one skill first).
 - He also uploaded three of the studio's procedure skills to the account: ad-project-intake, ad-scriptwriting, advertising-strategy (identical to .claude/skills). The other 14 studio skills are only in the repository.
 - Still open: the 108 edits (rounds 4-39), the acceptance-test ad, a second live studio test (scriptwriter) and a re-try of the unread expert videos were running when this was written.
+
+## Addendum 3, 21 Nov 2026 (after five live studio tests)
+- Five of seven specialists tested live on the fictional sample (creative, script, storyboard, visual production planning, post planning); every gap found was fixed. Results: advertising-studio/documentation/test-results.md.
+- The gate is now enforced by code: test markers never count (studio.py), and a PreToolUse hook (advertising-studio/tools/gate_hook.py, wired in .claude/settings.json) blocks paid generation, publishing, purchase and sign-in changes without a real approval for the project named in advertising-studio/ACTIVE-PROJECT. Unit-tested; NOT yet seen firing in a real session.
+- Model registry now holds live Higgsfield settings and credit prices (read 21 Nov 2026); quality scores still empty.
+- Pending edit to a saved skill: ai-video-legal-consent-labels lists three regions for Google's visible AI label; verified current list is six.
+- YouTube refuses playback from this cloud network (asks for sign-in); unread videos need the owner's pasted transcripts or a session on his computer.

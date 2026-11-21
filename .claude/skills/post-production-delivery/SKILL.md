@@ -12,13 +12,14 @@ A finished film in the right formats, with a licence trail for every sound and i
 QC-passed clips, script, storyboard, strategy media list.
 
 ## Workflow
-1. Build `12-post-production/edit-plan.md`: order, in/out, transitions, pacing, music hits.
-2. Sound plan: voiceover (language, voice, consent), music (licence that covers client ads and the chosen media), SFX. Record each licence in `licences.md`.
-3. Captions and supers: language, reading time, safe zones per platform.
-4. Delivery matrix from `templates/delivery-matrix.md`: version x length x ratio x platform, with codec, loudness and spec source link. Unknown spec = UNKNOWN, ask or look up, never guess.
-5. Editing happens in the owner's editor (guide him step by step) or through an approved connector.
-6. Legal gate before anything leaves the computer: releases, AI labels, claims.
-7. Assemble `13-final-delivery/` and write `final-report.md`: deliverables, specs, models used, credits spent, QC results, open issues, asset locations.
+1. Planning may start before clips exist (edit plan, sound plan, delivery matrix, legal checklist); say which inputs are missing. Assembly and export need QC-passed clips and the approved gates.
+2. Build `12-post-production/edit-plan.md` from `templates/edit-plan.md`: order, in/out, transitions, pacing, music hits; place every super inside the destination platform's safe zone and say whether the box is a published figure or your arithmetic.
+3. Sound plan from `templates/sound-plan.md`: voiceover (language, voice, consent), music (licence that covers client ads and the chosen media), SFX - options only, the owner chooses. Record each licence in `12-post-production/licences.md` from `templates/licences.md`.
+4. Captions and supers: language, reading time, safe zones per platform - written into the edit plan and the delivery matrix (no separate file).
+5. Delivery matrix from `templates/delivery-matrix.md`: version x length x ratio x platform, with codec, loudness and spec source link. Unknown spec = UNKNOWN, ask or look up, never guess.
+6. Editing happens in the owner's editor (guide him step by step) or through an approved connector.
+7. Legal gate before anything leaves the computer: fill `13-final-delivery/legal-checklist.md` from `templates/legal-checklist.md` with the owner's legal-gate skill; where two knowledge sources disagree, use the newer verified one and flag it.
+8. Assemble `13-final-delivery/` and write `final-report.md` (only when deliverables exist): deliverables, specs, models used, credits spent, QC results, open issues, asset locations.
 
 ## Expected outputs
 `12-post-production/` plans, `13-final-delivery/` package, final report.
