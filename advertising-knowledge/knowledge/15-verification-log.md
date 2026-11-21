@@ -20,3 +20,8 @@ Many prices read on 21 Nov 2026 are Black Friday promotions and will change with
 
 ## Totals, 21 Nov 2026
 304 rows re-read by three independent verifiers: 286 PASS, 4 CHANGED, 1 FAIL (corrected), the rest not confirmed or not openable. Everything not re-read keeps the DRAFT status inside its file.
+
+## Gap-fill round (21 Nov 2026)
+- G1 Israel: tax ceiling and VAT now agree across two non-government sources; National Insurance rates read on the official page; an Israeli TV delivery format found in two sources; radio ethics rules read in full; influencer disclosure position read in the official PDF. File 06.
+- G3 experts: 7 rows of file 07 re-read and PASS (Frame.io stages, word counts, BetterBriefs statistics, three bidders, one week for a treatment, 6-12 weeks blog claim). YouTube refused all requests that day. File 14.
+- G2 platforms and tools: pending when this was written.
