@@ -1,6 +1,6 @@
 # 08 - AI video and image tools: plans, prices, rights, rankings
 
-Read: 20-21 Nov 2026. STATUS: DRAFT - NOT YET VERIFIED. Do not copy any number into a skill until `15-verification-log.md` shows it PASS.
+Read: 20-21 Nov 2026. STATUS: PARTLY VERIFIED 21 Nov 2026 (verifier V2). Rows V2 re-read are listed in `verification/V2-tools-prices-rights.md`; everything else is still DRAFT. Many prices are Black Friday promotions - always re-check live.
 Tags per fact: OFFICIAL / VENDOR / COMMUNITY / INFERENCE / UNKNOWN. "SNIPPET ONLY" = seen in a search result, page not opened.
 Origin: sub-agent report `research-raw/R4a-tools-ai-video-image-prices-rights.md`, reformatted only (no fact added or removed by the main agent).
 
@@ -190,3 +190,19 @@ D. INFERENCE - "best value" candidate: Seedance 2.5 at 720p (ranked #1 image-to-
 - Candidate: Luma Plus, at list price, with "Commercial use" shown on the plan.
 - Caveats: Luma's own "Cost Per Video Generation" table and plan credits are the only inputs. Krea and OpenArt advertise temporary Seedance discounts whose per-second cost could not be computed, and Higgsfield and Dreamina prices are unknown, so this is not a full-market comparison.
 - Lower-cost alternative with a native model: Runway Max annual, $76 / 791 s of Gen-4.5 = about $0.096 per second (Standard annual: $12 / 52 s = about $0.231). Gen-4.5 does not appear in the leaderboard rows read.
+
+## Corrections and additions after verification (21 Nov 2026, verifier V2)
+1. Higgsfield plan names are Starter, Plus, Ultra (plus Free; business: Team, Scale, Enterprise). "Basic Pro Ultimate Creator" above came from page metadata and is wrong.
+2. Higgsfield pricing page (VENDOR, read 21 Nov 2026, Black Friday promo running): Starter $19 billed monthly, 270 credits. Plus list $59 (promo $47 monthly; $33/month billed annually), 1,200 credits. Ultra list $129 (promo $79 monthly; $50/month billed annually), 3,000 credits (selector 3K / 6K / 9K). Prices exclude VAT.
+3. Higgsfield credits per 5 s (same page): Seedance 2.5 720p 35, 1080p 80; Kling 4.0 720p 12.5, 1080p 18.75; Wan 3.0 720p 7.5, 1080p 15; Veo 3.1 about 40 per 4 s. Per image: Nano Banana Pro 2 (4K: 4); GPT Image 2.6 1.75; Seedream 5.0 Pro 2.5; Soul 2.0 0.12.
+4. Higgsfield: "Unlimited models and Free Generations on plans are accessible only via higgsfield.ai and are not accessible on MCP/CLI, Canvas or Supercomputer."
+5. Higgsfield Terms (OFFICIAL, last updated October 23, 2026) s.4.4: "Company does not claim ownership of any of your Inputs or Outputs, nor does it restrict your commercial use of Outputs. Your rights in Outputs you have generated and exported survive cancellation of your subscription or deletion or termination of your Account, and you may transfer or sublicense your rights in Outputs to your clients or other third parties."
+6. Same s.4.4: inputs and outputs "may be used by Company to train ... its ... AI models" (Enterprise Agreement customers excluded); "Company does not guarantee the uniqueness, originality, or exclusivity of any Output."
+7. s.5.5: "Where required by applicable law, you will disclose that Output is artificially generated or manipulated, and you will not remove, alter, or obscure any provenance signals or markings". s.6.4: the company may embed machine-readable watermarks / C2PA signals.
+8. Higgsfield help centre: paid plans add no visible watermark; files made on the free plan keep the watermark after upgrading (regenerate them); credit packs are valid 90 days.
+9. Kling free tier: no commercial use, no watermark removal. Kling FAQ: paid subscribers may use output commercially; the user is responsible for portrait rights, advertising compliance and AI labelling.
+10. Midjourney Terms (effective May 27, 2026): "You own all Assets You create ... to the fullest extent possible under applicable law"; companies over $1,000,000 a year need Pro or Mega.
+11. Google: "Google won't claim ownership over that content" (Terms effective July 30, 2026). The generative-AI indemnity list covers Google Cloud and Workspace services; Flow and the consumer Gemini app are not listed (INFERENCE: no indemnity on consumer plans). All Flow outputs carry an invisible SynthID watermark.
+12. OpenAI Terms (effective January 1, 2026): the user owns the output. ChatGPT Plus $20/month; Pro tiers $100, $200, $500.
+13. Artificial Analysis today: image-to-video places 6 and 7 swapped (HeyGen Video 1, SkyReels V4); Elo values moved by 1-2 points; every first place unchanged.
+14. Still UNKNOWN: Adobe Firefly (all Adobe hosts blocked), Dreamina and Hailuo plan tables, Higgsfield Team / Scale prices and credit-pack prices.

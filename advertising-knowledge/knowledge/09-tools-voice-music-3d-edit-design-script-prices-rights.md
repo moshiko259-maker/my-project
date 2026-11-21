@@ -1,6 +1,6 @@
 # 09 - Voice, music, 3D, editing, design, storyboard, script tools
 
-Read: 20-21 Nov 2026. STATUS: DRAFT - NOT YET VERIFIED. Do not copy any number into a skill until `15-verification-log.md` shows it PASS.
+Read: 20-21 Nov 2026. STATUS: PARTLY VERIFIED 21 Nov 2026 (verifier V2). Rows V2 re-read are listed in `verification/V2-tools-prices-rights.md`; everything else is still DRAFT.
 Tags per fact: OFFICIAL / VENDOR / COMMUNITY / INFERENCE / UNKNOWN. "SNIPPET ONLY" = seen in a search result, page not opened.
 Origin: sub-agent report `research-raw/R4b-tools-voice-music-3d-edit-design.md`, reformatted only (no fact added or removed by the main agent).
 
@@ -140,3 +140,11 @@ Coverage is partial: about 45 of roughly 80 tools were read on live official pag
 8. https://www.remotion.dev/docs/license/pricing
 9. https://stableaudio.com/pricing
 10. https://www.blackmagicdesign.com/products/davinciresolve
+
+## Corrections and additions after verification (21 Nov 2026, verifier V2)
+1. FAIL corrected - Stable Audio has FIVE tiers: Free $0 (50 credits), Solo $12 (660), Session $30 (1,800), Producer $90 (6,000), Studio $199/mo (14,000). The most expensive AI-music tier seen is Studio $199, not Producer $90.
+2. Suno prices now read on the live page: Pro $10/month or $8 billed $96/year, 2,500 credits, 20 song downloads a month. Premier $30 / $24 (billed $288/year), 10,000 credits, 60 downloads. Platinum $120 / $100 (billed $1,200/year), 15,000 credits, 120 downloads. The earlier $8 / $24 "monthly" snippet was the annual-billing price.
+3. Suno Terms (effective September 3, 2026): free tier output is for "personal and non-commercial purposes"; "You may commercially exploit Output solely to the extent ... you have obtained a permitted download of that Output in accordance with the download allocations for your applicable service tier"; rights in a download are perpetual after cancellation; no commercial use of a Remix; "Suno makes no representation or warranty to you that any copyright will vest in any Output."
+4. ElevenLabs promotion changed: monthly view now shows first-month offers (Starter $1 then $6; Creator $11 then $22; until Dec 1). List prices unchanged.
+5. Storyblocks Unlimited All Access: was $30, now $24 a month billed annually (sale). CapCut Teams USD 12.49 per seat. Mubert tier names: Creator / Pro / Ultra. Epidemic Sound Pro Plus adds OTT media.
+6. Not re-checked by V2 (still DRAFT): Murf, Azure, Google TTS, Soundraw, Musicbed, all 3D tools, Frame.io, Final Cut, Figma, Jitter, Rive, Remotion, storyboard and script tools, Canva plan prices.
