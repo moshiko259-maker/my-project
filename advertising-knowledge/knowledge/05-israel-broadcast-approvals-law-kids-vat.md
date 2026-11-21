@@ -1,6 +1,6 @@
 # 05 - Israel: broadcasters, approvals, ad law basics, kids, outdoor, freelancer tax basics (NOT legal advice)
 
-Read: 20-21 Nov 2026. STATUS: DRAFT - NOT YET VERIFIED. Do not copy any number into a skill until `15-verification-log.md` shows it PASS.
+Read: 20-21 Nov 2026. STATUS: PARTLY VERIFIED 21 Nov 2026 (verifier V3: 48 rows re-read, no FAIL). See `15-verification-log.md` for which rows passed, which rest only on a community mirror, and which tax facts are NOT confirmed on an official page.
 Tags per fact: OFFICIAL / VENDOR / COMMUNITY / INFERENCE / UNKNOWN. "SNIPPET ONLY" = seen in a search result, page not opened.
 Origin: sub-agent report `research-raw/R2-israel-market-and-law.md`, reformatted only (no fact added or removed by the main agent).
 
@@ -127,3 +127,15 @@ ACCESS LIMIT: www.gov.il, nevo.co.il, kolzchut.org.il, kan.org.il, calcalist ret
 8. https://www.gov.il/he/service/request-assignment-number-for-tax-invoice and https://www.gov.il/he/service/request-open-exempt-dealer-via-internet (blocked here)
 9. https://he.wikisource.org/wiki/חוק_עבודת_הנוער and https://he.wikisource.org/wiki/חוק_הגבלת_משקל_בתעשיית_הדוגמנות
 10. https://he.wikisource.org/wiki/חוק_הגנת_הצרכן and https://he.wikisource.org/wiki/חוק_הגבלת_הפרסומת_והשיווק_של_משקאות_אלכוהוליים
+
+## Corrections and additions after verification (21 Nov 2026, verifier V3)
+1. CHANGED - withholding at source: the regulation text (community mirror) says 20% on payments for services or assets, and 30% when the recipient has not shown proper books / has no certificate. The earlier wording "up to 30%" was loose. NOT confirmed on an official page.
+2. Total price "including VAT": the definition was read (community mirror): the total price includes "מס ערך מוסף, אגרות או תשלומי חובה". No longer an inference.
+3. TV ethics rule 11 (controversial political / social / public / economic message) was read in the regulator's own PDF - tag is now OFFICIAL.
+4. Pre-approval s.3(ב): silence = may air, unless the Director notified an extension of the deadline.
+5. Scheduling s.3(ב)(1): between 20:00 and 24:00 ad time may be allocated freely if the total is not over 40 minutes.
+6. Alcohol law s.2: the billboard ban is general; the under-18 condition applies to print.
+7. NEW - TV ethics rules s.54א (regulator PDF): subtitles in a commercial must be in a contrasting colour, letter height not less than 16 pixels, on screen at least 5 consecutive seconds.
+8. NEW - Youth Labor Law s.4א (2023 amendment, community mirror): ages 15-18 in an advertising appearance, including modelling, need consent of the youth and a parent on the Second Schedule form.
+9. NOT CONFIRMED on an official page (gov.il refuses automated access): osek patur ceiling 122,833 for 2026; VAT 18%; withholding rates; the 20,000 threshold for 2025. The owner should read these on the Tax Authority site or ask an accountant.
+10. CONFIRMED on an official publication (State Comptroller report, June 2026): allocation-number threshold 10,000 from 1.1.2026 and 5,000 from 1.6.2026.
