@@ -12,6 +12,7 @@ Updated: 20 Nov 2026. Status column: PLANNED / DRAFT / VERIFIED.
 | knowledge/03-media-map-meta-tiktok-social-ad-specs.md | Meta + TikTok (+ others) paid ad specs | PARTLY VERIFIED |
 | knowledge/04-media-map-dooh-radio-podcast-print-cinema-inapp-influencer.md | Remaining media (print not researched) | PARTLY VERIFIED |
 | knowledge/05-israel-broadcast-approvals-law-kids-vat.md | Israel: broadcast process, approvals, law basics, kids, VAT (files 05 and 06 merged; not legal advice) | PARTLY VERIFIED |
+| knowledge/06-israel-gap-fill-tax-delivery-radio-influencers.md | Israel gaps filled from alternative reputable sources (two-source rule) | DRAFT, sources tagged per row |
 | knowledge/07-production-pipeline-brief-to-delivery.md | Stages, roles, timelines, deliverables | DRAFT |
 | knowledge/08-tools-ai-video-image-prices-rights.md | AI video + image tools, plans, rights, rankings | PARTLY VERIFIED |
 | knowledge/09-tools-voice-music-3d-edit-design-script-prices-rights.md | Other tool categories | PARTLY VERIFIED |
