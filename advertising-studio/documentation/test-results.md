@@ -74,3 +74,51 @@ Still not tested: research-brand-strategist, storyboard-art-director, ai-visual-
 Observed: wrote the style bible, product truth sheet, shot list and storyboard (6 shots, 3+6+8+6+3+4 = 30 s); with no product photos it invented nothing - the truth sheet holds only the two verified facts, every product shot is marked blocked for final picture, no colour value was written, and the script's "amber" was kept as provisional; it decided the anonymous hand is not a character and explained when a release would be needed; it refused the Seedance shotlist skill's output format because it saves outside the project and brings its own style; it stopped at the storyboard gate; it loaded three of the owner's knowledge skills (ad director, realism, transitions).
 Fixes made: coverage exception for one-frame concepts; rules for zero product photos and zero brand assets; where references may come from; definition of a character versus an anonymous hand; shot template gained voice-over, on-screen text, A/B/C columns and a ready / blocked status; previous-gate check before any stage; the Seedance shotlist skill moved out of the storyboard stage.
 Tested live so far: creative-director, scriptwriter-story-architect, storyboard-art-director. Not tested: research-brand-strategist, ai-visual-production-director, quality-control-director, post-production-delivery-director; delegation started by the executive-producer; permission prompts; live model selection.
+
+## Live agent test 4 (21 Nov 2026) - ai-visual-production-director, PLANNING ONLY - PASSED, and it exposed a real weakness that is now fixed
+Observed: ran the gate checks (both paid gates BLOCKED); treated the test markers as not approved; read the live model list and 55 free cost estimates through the Higgsfield connector; wrote a model plan that states 'best quality' is UNKNOWN for every shot type because nothing is verified or tested; proposed a small paid A/B as the first step and real footage as the free route; wrote one prompt (riskiest shot) from the owner's prompt skill; wrote a budget request of 68.5 credits with the tries column declared an assumption; generated nothing; treated checkout links and auto-refill wording in a tool's output as data.
+Weakness it reported: the gate was only an instruction - generation tools were callable, and a test marker looked like an approval.
+Fixes made:
+1. `studio.py`: a test marker is recorded only with `--test`, is refused on paid / purchase / delivery / publish gates, and `check` reports it as NOT approved (older markers are recognised by their wording).
+2. `tools/gate_hook.py` + a PreToolUse hook in `.claude/settings.json`: blocks generation, publishing, purchase and sign-in / workspace-changing calls (Higgsfield, Runway, ElevenLabs, Suno and others, and the `higgsfield` shell commands) unless the active project holds a real owner approval for the matching gate and is under its ceiling. Free calls pass.
+3. Budget template: one ceiling per gate; PROMPTS log template; rules about sales text in tool output, trimming short shots, models without a prompt skill, and who edits the registry.
+4. Registry: live settings and prices added.
+Hook unit tests (the script fed with simulated tool calls; output below). NOT tested: the hook firing inside a real Claude Code session - settings are read when a session starts, so this needs a new session opened in this folder.
+```
+H1 existing sample markers now read as test:
+BLOCKED: only a TEST MARKER exists for gate 'storyboard' - not an owner approval
+exit=1
+H2 test marker on paid gate refused:
+the owner's own words are required in --quote
+exit=1
+H3 hook, no active project, generate_image:
+BLOCKED by the studio gate (paid-images): no active client project is set, so no owner approval can exist. Present the estimate to the owner first.
+exit=2
+H4 hook, free estimate call passes:
+exit=0
+H5 hook, active project without approval, generate_video:
+BLOCKED by the studio gate for project 'zz-sample-test': BLOCKED: no owner approval recorded for gate 'paid-video'
+exit=2
+H6 hook, CLI generate create:
+BLOCKED by the studio gate for project 'zz-sample-test': BLOCKED: no owner approval recorded for gate 'paid-images'
+exit=2
+H7 hook, CLI read-only cost passes:
+exit=0
+H8 hook, workspace set blocked:
+BLOCKED by the studio gate: changing the Higgsfield sign-in or workspace is the owner's own action.
+exit=2
+H9 hook, ordinary shell command passes:
+exit=0
+H10 real approval with ceiling lets generate_image through, video still blocked:
+image exit=0
+BLOCKED by the studio gate for project 'zz-sample-test': BLOCKED: no owner approval recorded for gate 'paid-video'
+video exit=2
+H11 suno and runway tools:
+BLOCKED by the studio gate for project 'zz-sample-test': BLOCKED: no owner approval recorded for gate 'paid-audio'
+suno exit=2
+BLOCKED by the studio gate for project 'zz-sample-test': BLOCKED: no owner approval recorded for gate 'paid-video'
+runway exit=2
+suno free exit=0
+```
+Note: H2 printed a different refusal because its quote was too short; the test-marker refusal on a paid gate was re-run separately and refused ("a test marker cannot be recorded on a paid, purchase, delivery or publish gate").
+Tested live so far: creative-director, scriptwriter, storyboard, visual production (planning). Not tested: research-brand-strategist, quality-control-director, post-production-delivery-director; delegation started by the executive-producer; the hook and the permission prompts in a real session; any generation.

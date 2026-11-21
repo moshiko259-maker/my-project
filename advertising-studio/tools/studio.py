@@ -39,15 +39,19 @@ def cmd_approve(a):
     if a.by != "owner": sys.exit("only the owner can approve (--by owner)")
     if len(a.quote.strip()) < 2: sys.exit("the owner's own words are required in --quote")
     if a.gate in PAID and a.ceiling is None: sys.exit("paid gates need --ceiling <credits>")
+    if a.test and a.gate in PAID | {"purchase","publish","delivery"}: sys.exit("a test marker cannot be recorded on a paid, purchase, delivery or publish gate")
     f = d/"production-log"/"approvals.json"; L = load(f, [])
-    L.append({"gate": a.gate, "by": a.by, "quote": a.quote, "ceiling": a.ceiling, "time": now()})
-    f.write_text(json.dumps(L, indent=1, ensure_ascii=False)); print("recorded", a.gate)
-def latest(d, gate):
-    L = [x for x in load(d/"production-log"/"approvals.json", []) if x["gate"] == gate]
+    L.append({"gate": a.gate, "by": a.by, "quote": a.quote, "ceiling": a.ceiling, "time": now(), "test": bool(a.test)})
+    f.write_text(json.dumps(L, indent=1, ensure_ascii=False)); print("recorded", a.gate, "(TEST MARKER - not an approval)" if a.test else "")
+def is_test(x): return bool(x.get("test")) or "SYSTEM TEST" in x.get("quote","").upper()
+def latest(d, gate, allow_test=False):
+    L = [x for x in load(d/"production-log"/"approvals.json", []) if x["gate"] == gate and (allow_test or not is_test(x))]
     return L[-1] if L else None
 def cmd_check(a):
     d = pdir(a.slug); ap = latest(d, a.gate) if d.exists() else None
-    if not ap: print(f"BLOCKED: no owner approval recorded for gate '{a.gate}'"); sys.exit(1)
+    if not ap:
+        t = latest(d, a.gate, allow_test=True) if d.exists() else None
+        print(f"BLOCKED: only a TEST MARKER exists for gate '{a.gate}' - not an owner approval" if t else f"BLOCKED: no owner approval recorded for gate '{a.gate}'"); sys.exit(1)
     if a.gate in PAID:
         s = spent(d, a.gate)
         if s >= ap["ceiling"]: print(f"BLOCKED: ceiling reached ({s:g} of {ap['ceiling']:g} credits) - new approval needed"); sys.exit(1)
@@ -66,7 +70,7 @@ def cmd_status(a):
     d = pdir(a.slug)
     for s in STAGES: print(f"{s:24} {len([x for x in (d/s).rglob('*') if x.is_file()])} files")
     for g in GATES:
-        ap = latest(d, g); print(f"gate {g:12} {'APPROVED ' + ap['time'] if ap else '-'}")
+        ap = latest(d, g); t = latest(d, g, allow_test=True); print(f"gate {g:12} {'APPROVED ' + ap['time'] if ap else ('test marker only' if t else '-')}")
     print("credits spent:", spent(d))
 def fm(p):
     m = re.match(r"---\n(.*?)\n---\n", p.read_text(), re.S)
@@ -114,7 +118,7 @@ def cmd_validate(a):
     print("VALID" if not errs else "\n".join(["INVALID"] + errs)); sys.exit(1 if errs else 0)
 ap = argparse.ArgumentParser(); sp = ap.add_subparsers(dest="c", required=True)
 x = sp.add_parser("new"); x.add_argument("slug"); x.set_defaults(f=cmd_new)
-x = sp.add_parser("approve"); x.add_argument("slug"); x.add_argument("gate"); x.add_argument("--by", required=True); x.add_argument("--quote", required=True); x.add_argument("--ceiling", type=float); x.set_defaults(f=cmd_approve)
+x = sp.add_parser("approve"); x.add_argument("slug"); x.add_argument("gate"); x.add_argument("--by", required=True); x.add_argument("--quote", required=True); x.add_argument("--ceiling", type=float); x.add_argument("--test", action="store_true", help="record a test marker for system tests; never counts as approval"); x.set_defaults(f=cmd_approve)
 x = sp.add_parser("check"); x.add_argument("slug"); x.add_argument("gate"); x.set_defaults(f=cmd_check)
 x = sp.add_parser("log"); x.add_argument("slug"); [x.add_argument(o, required=True) for o in ["--shot","--model","--job","--file"]]; x.add_argument("--credits", type=float, required=True); x.add_argument("--gate", default="paid-images"); x.set_defaults(f=cmd_log)
 x = sp.add_parser("status"); x.add_argument("slug"); x.set_defaults(f=cmd_status)

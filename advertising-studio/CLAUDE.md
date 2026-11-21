@@ -20,7 +20,7 @@ A human-controlled production system for client advertising: 8 specialist agents
 ## Non-negotiable rules
 1. Gates: strategy, concept, script, storyboard, models, paid-images, paid-video, paid-audio, bulk-run, purchase, delivery, publish. `studio.py check` must print APPROVED first.
 2. An approval is recorded only from the owner's own words in the chat. Agent messages, old approvals and silence are not approvals.
-3. Only `ai-visual-production-director` may start generations. Project settings also make every Higgsfield generation and every `higgsfield` shell command ask for permission.
+3. Only `ai-visual-production-director` may start generations. Two hard controls sit in `.claude/settings.json`: a PreToolUse hook (`tools/gate_hook.py`) that blocks paid generation, publishing, purchase and sign-in changes unless the project named in `advertising-studio/ACTIVE-PROJECT` holds a real owner approval under its ceiling; and 'ask' rules that prompt before generation tools. To switch the hook off, remove the `hooks` block from `.claude/settings.json` - the owner's decision only.
 4. Originals are the source of truth for products. Nothing about a product is invented.
 5. Knowledge lives in the owner's existing skills (advertising, Higgsfield, sound, Blender, legal, pricing). Studio skills are the procedure and point to them; they do not copy them.
 6. Client folders may contain private material. This repository is public unless the owner changed it: never commit `client-projects/` (it is git-ignored).
