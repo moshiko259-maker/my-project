@@ -16,13 +16,15 @@ Updated: 20 Nov 2026. Status column: PLANNED / DRAFT / VERIFIED.
 | knowledge/07-production-pipeline-brief-to-delivery.md | Stages, roles, timelines, deliverables | PLANNED |
 | knowledge/08-tools-ai-video-image-prices-rights.md | AI video + image tools, plans, rights, rankings | PLANNED |
 | knowledge/09-tools-voice-music-3d-edit-design-script-prices-rights.md | Other tool categories | PLANNED |
-| knowledge/10-connectors-inventory.md | Which connectors are connected, what each can do, cost gates | PLANNED |
+| knowledge/10-connectors-inventory.md | Which connectors are connected, what each can do, cost gates | DRAFT |
 | knowledge/11-business-pricing-quotes-contracts-usage-rights.md | Pricing, quotes, contracts, buyouts, client process | PLANNED |
 | knowledge/12-business-finding-clients-case-studies.md | Where clients are found, case studies | PLANNED |
 | knowledge/13-learning-sources-academies-channels-courses.md | Official academies, teachers, free courses | PLANNED |
 | knowledge/14-video-lessons-log.md | Lessons from videos read in full (transcripts) | PLANNED |
 | knowledge/15-verification-log.md | Verifier results: fact, source, date, pass/fail | PLANNED |
-| research-raw/ | Raw sub-agent reports (unverified) | empty |
+| research-raw/ | Raw sub-agent reports R1a R1b R1c R1d R2 R3 R4a R4b R5 (unverified) + COMMON_BRIEF.md | 9 of 10 saved |
+| ../advertising-studio/ | Production system: CLAUDE.md, tools, templates, workflows, model-registry, documentation | built 21 Nov 2026 |
+| ../.claude/agents, ../.claude/skills | 8 agents, 17 studio skills | built, structure-validated |
 | skill-drafts/ | Final skill drafts + edit lists + round plan | empty |
 
 Fact tags used in every knowledge file: OFFICIAL / VENDOR / COMMUNITY / INFERENCE / UNKNOWN, each with source link and date read.

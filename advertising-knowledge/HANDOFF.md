@@ -1,6 +1,6 @@
 # HANDOFF - advertising knowledge base and skill system
 
-Last update: 20 Nov 2026 (session 1). Status: OWNER APPROVED THE PLAN. Wave 1 (10 research sub-agents) launched; reports not yet merged.
+Last update: 20 Nov 2026 (session 1). Status (21 Nov 2026): wave 1 research done except R6; 9 raw reports saved, UNVERIFIED. Advertising studio system built in advertising-studio/ + .claude/. Waves 2-5 not started.
 
 ## What this job is
 Build a verified knowledge base + skills for advertising in all media, and a general
@@ -47,3 +47,13 @@ Raw reports go to research-raw/ as they arrive. A report NOT in research-raw/ = 
 1. Read PLAN.md and INDEX.md.
 2. Check research-raw/ for which roles are saved; re-run missing roles with the brief in research-raw/COMMON_BRIEF.md.
 3. Continue with wave 2 (knowledge files), wave 3 (verifiers), wave 4 (skill drafts).
+
+## Session 1 continued (21 Nov 2026)
+- Raw reports saved in research-raw/: R1a, R1b, R1c, R1d, R2, R3, R4a, R4b, R5. R6 (learning sources + transcripts) was resumed and had not reported when this was written - check research-raw/ for an R6 file.
+- Research agents could not open: gov.il (all pages), nevo, kolzchut, kan.org.il, adobe.com, openai.com, sagaftra.org, x business help, Higgsfield pricing page. Those facts are SNIPPET or UNKNOWN and must go to the verifier with a real browser, or be read by the owner.
+- New owner requests (20-21 Nov):
+  1. Wants everything private -> he was given the steps to make the repository private (his action). Do not make the bubapix repositories private without checking how the preview site is hosted.
+  2. Wants skills written "on the computer" like other skills. This cloud session has no computer folder attached (list_computer_folders returned none) and no save-card tool. Skills for his Claude account must be issued as save cards from a claude.ai chat.
+  3. System build (done): 8 agents in .claude/agents, 17 skills in .claude/skills, tools/studio.py gates, templates, registry, docs. See advertising-studio/CLAUDE.md and documentation/test-results.md (what was and was NOT tested).
+  4. AFTER all research and skills are finished: a surprise gift ad for a business whose material is in the folder named "דיגיטלי" inside his Downloads folder (offers, reports, photos from their site). He cannot contact them before delivery. Wants several ideas, a full drawn storyboard with images, improved photos, a cinematic ad, model and platform recommendation with commercial licence checked. This is the acceptance test of the whole system. BLOCKED until that folder is reachable (share it through Remote Control or run the session on his computer). Spec-ad cautions apply: no consent from the business, their trademarks and photos, truth gate - see ai-advertising-director "Spec-ad rule" and ai-video-legal-consent-labels.
+- Usage note: the 5-hour usage limit was hit once with 10 agents in parallel; run fewer agents at a time.

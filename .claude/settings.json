@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "ask": [
+      "Bash(higgsfield:*)", "Bash(higgs:*)", "Bash(hf:*)",
+      "mcp__Higgsfield__generate_image", "mcp__Higgsfield__generate_image_batch",
+      "mcp__Higgsfield__generate_video", "mcp__Higgsfield__generate_video_batch",
+      "mcp__Higgsfield__generate_audio", "mcp__Higgsfield__generate_audio_batch",
+      "mcp__Higgsfield__generate_3d", "mcp__Higgsfield__execute_preset",
+      "mcp__Higgsfield__ads_studio_generate", "mcp__Higgsfield__ai_influencer_generate",
+      "mcp__Higgsfield__upscale_image", "mcp__Higgsfield__upscale_video",
+      "mcp__Higgsfield__motion_control", "mcp__Higgsfield__reframe", "mcp__Higgsfield__outpaint_image",
+      "mcp__Higgsfield__create_voice", "mcp__Higgsfield__voice_change",
+      "mcp__Higgsfield__publish_project", "mcp__Higgsfield__tiktok_prepare_publish", "mcp__Higgsfield__meta_ads_write",
+      "mcp__Runway__generate_video", "mcp__Runway__generate_image", "mcp__Runway__create_ad",
+      "mcp__ElevenLabs__creative_generate_speech", "mcp__ElevenLabs__creative_generate_video", "mcp__ElevenLabs__creative_generate_image",
+      "mcp__Suno__audio-create", "mcp__Suno__sounds-create"
+    ]
+  }
+}
