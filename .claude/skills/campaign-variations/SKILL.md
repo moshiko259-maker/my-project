@@ -1,0 +1,40 @@
+---
+name: campaign-variations
+description: "Plans and produces controlled variants of an approved ad: other lengths, ratios, hooks, languages or audiences, changing one dial at a time. Use when cut-downs, versions, A/B variants or localisations of an existing approved ad are requested. Not for a new concept."
+---
+
+# campaign-variations
+
+## Purpose
+More versions from the same approved assets, without drifting from the idea or the budget.
+
+## Required inputs
+Approved master, script, shot list, delivery matrix.
+
+## Workflow
+1. List the dials: length, ratio, hook, call to action, language, audience.
+2. One dial per variant; name each `<master>_<dial>-<value>`.
+3. Reuse existing clips first (reframe, re-edit); new generation only where needed, through the budget gate.
+4. Each variant gets its own script lines, QC row and delivery row.
+5. Write `13-final-delivery/variants.md`.
+
+## Expected outputs
+Variant list, scripts, delivery rows.
+
+## Quality checklist
+- [ ] One change per variant.
+- [ ] No new claims.
+- [ ] Costs approved before generation.
+
+## Reuse - knowledge skills that own the details (load the one you need; do not copy them here)
+ai-advertising-director (variants at scale), higgsfield-marketing-studio-ads-studio-ad-multiplier-ugc-ads, canva resize skills, adobe social variations.
+
+Templates: `advertising-studio/templates/`. Stage map and gates: `advertising-studio/workflows/master-workflow.md`.
+
+## Hard rules (every stage)
+- Never invent facts, prices, specs, product details or model capabilities. Unverified = write UNKNOWN and say what was tried.
+- No paid generation, purchase, upgrade, publish or send without a recorded approval (see `production-budget-control`).
+- Paid tools are never ruled out in advance: present cost, pros, cons, free alternative and a recommendation; act only after the owner's explicit yes.
+- Recommend then teach: first the tool/model options (cheapest, most expensive, best quality, best value, with live prices and a pick), then, after the owner chooses, exact settings and numbered steps.
+- Reply to the owner in Hebrew; Hebrew and English never on the same line. Files and prompts are in English.
+- Never delete or overwrite the owner's files. Work only inside the client project folder and `advertising-studio/`.
