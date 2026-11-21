@@ -83,3 +83,8 @@ LESSONS
 - Skill upload route VERIFIED on the official support page (Customize > Skills > Upload a skill; ZIP containing the skill folder; folder name = skill name). Eight upload-ready archives: advertising-knowledge/ready-to-upload-skill-zips/. Whether uploading replaces an existing skill of the same name is UNKNOWN - edits to saved skills still go through save cards.
 - Owner wants everything on his computer: a full package (work files + a private backup of his saved skills as synced on 20 Nov 2026) was sent to him as a download; the saved-skill copies are NOT in this repository. Hebrew guide: advertising-knowledge/START-HERE-HEBREW-GUIDE.md.
 - YouTube refused all requests on 21 Nov 2026 (429 / unplayable); do not retry in a loop. gov.il service pages refuse automated access, but files under gov.il/BlobFolder open normally.
+
+## Addendum 2, 21 Nov 2026 08:12 UTC
+- The owner uploaded all 8 new account skills himself (ZIP upload). Verified: each synced copy is identical to its draft. Rounds 1-3 are DONE. If a draft changes after this point, the saved skill must be updated again (upload-replace behaviour still unknown - check with one skill first).
+- He also uploaded three of the studio's procedure skills to the account: ad-project-intake, ad-scriptwriting, advertising-strategy (identical to .claude/skills). The other 14 studio skills are only in the repository.
+- Still open: the 108 edits (rounds 4-39), the acceptance-test ad, a second live studio test (scriptwriter) and a re-try of the unread expert videos were running when this was written.

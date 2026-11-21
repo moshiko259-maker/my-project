@@ -4,9 +4,9 @@ Name note: the requested name "creative-request-advisor-tools-models-prices-then
 
 | Round | Skills | Status |
 |---|---|---|
-| 1 | creative-request-advisor-tools-models-prices-then-teach-steps, advertising-and-media-hub, advertising-production-pipeline-brief-to-delivery (all new) | DRAFTED + validated (script A) 21 Nov 2026 - ready for cards |
-| 2 | advertising-tv-and-streaming-specs-israel-and-global, advertising-social-media-specs-and-formats, advertising-outdoor-radio-podcast-print-cinema-in-app-specs (all new) | DRAFTED + validated - ready for cards |
-| 3 | advertising-israel-broadcast-approvals-and-ad-law-basics, advertising-client-process-quotes-contracts-rights (both new) | DRAFTED + validated - ready for cards |
+| 1 | creative-request-advisor-tools-models-prices-then-teach-steps, advertising-and-media-hub, advertising-production-pipeline-brief-to-delivery (all new) | SAVED in the account - verified 21 Nov 2026 08:12 UTC (synced copy identical to the draft) |
+| 2 | advertising-tv-and-streaming-specs-israel-and-global, advertising-social-media-specs-and-formats, advertising-outdoor-radio-podcast-print-cinema-in-app-specs (all new) | SAVED in the account - verified 21 Nov 2026 08:12 UTC (synced copy identical to the draft) |
+| 3 | advertising-israel-broadcast-approvals-and-ad-law-basics, advertising-client-process-quotes-contracts-rights (both new) | SAVED in the account - verified 21 Nov 2026 08:12 UTC (synced copy identical to the draft) |
 
 All eight new drafts are full SKILL.md files in this folder (new skill = full skillMd).
 
