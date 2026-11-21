@@ -1,6 +1,6 @@
 # HANDOFF - advertising knowledge base and skill system
 
-Last update: 20 Nov 2026 (session 1). Status (21 Nov 2026): wave 1 research done except R6; 9 raw reports saved, UNVERIFIED. Advertising studio system built in advertising-studio/ + .claude/. Waves 2-5 not started.
+Last update: 20 Nov 2026 (session 1). Status (21 Nov 2026): wave 1 research done; 10 raw reports saved, UNVERIFIED. Advertising studio system built in advertising-studio/ + .claude/. Waves 2-5 not started.
 
 ## What this job is
 Build a verified knowledge base + skills for advertising in all media, and a general
@@ -49,7 +49,7 @@ Raw reports go to research-raw/ as they arrive. A report NOT in research-raw/ = 
 3. Continue with wave 2 (knowledge files), wave 3 (verifiers), wave 4 (skill drafts).
 
 ## Session 1 continued (21 Nov 2026)
-- Raw reports saved in research-raw/: R1a, R1b, R1c, R1d, R2, R3, R4a, R4b, R5. R6 (learning sources + transcripts) was resumed and had not reported when this was written - check research-raw/ for an R6 file.
+- Raw reports saved in research-raw/: R1a, R1b, R1c, R1d, R2, R3, R4a, R4b, R5. R6 saved too (8 videos read in full; 8 more listed as NOT READ). All 10 raw reports are saved.
 - Research agents could not open: gov.il (all pages), nevo, kolzchut, kan.org.il, adobe.com, openai.com, sagaftra.org, x business help, Higgsfield pricing page. Those facts are SNIPPET or UNKNOWN and must go to the verifier with a real browser, or be read by the owner.
 - New owner requests (20-21 Nov):
   1. Wants everything private -> he was given the steps to make the repository private (his action). Do not make the bubapix repositories private without checking how the preview site is hosted.
