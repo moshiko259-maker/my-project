@@ -1,6 +1,6 @@
 # 04 - Outdoor/DOOH, radio, podcast, print, cinema, in-app, influencer
 
-Read: 20-21 Nov 2026. STATUS: DRAFT - NOT YET VERIFIED. Do not copy any number into a skill until `15-verification-log.md` shows it PASS.
+Read: 20-21 Nov 2026. STATUS: PARTLY VERIFIED 21 Nov 2026 (verifier V1, no FAIL). Rows re-read are listed in `verification/V1-media-specs.md`; rows not re-read are still DRAFT. Platform specs change often - re-open the source link before delivery.
 Tags per fact: OFFICIAL / VENDOR / COMMUNITY / INFERENCE / UNKNOWN. "SNIPPET ONLY" = seen in a search result, page not opened.
 Origin: sub-agent report `research-raw/R1d-dooh-radio-podcast-print-cinema-inapp-influencer.md`, reformatted only (no fact added or removed by the main agent).
 
@@ -134,3 +134,13 @@ Access note: WebFetch could not resolve any host in this session; pages were rea
 9. https://www.asa.org.uk/static/17cf70a4-f904-4684-a68c8310ba7700e1/Influencers-guide-to-making-clear-that-ads-are-ads.pdf
 10. https://www.govinfo.gov/content/pkg/FR-2023-07-26/html/2023-14795.htm
 Also worth a pass: https://screenvisionmedia.com/wp-content/uploads/2024/08/SV-National-Commerical-Delivery-Specs-2024-updated.pdf ; https://podcasters.apple.com/support/893-audio-requirements ; https://support.axon.ai/en/app-discovery/creatives/best-practices-and-guidelines ; https://www.bauermedia.co.uk/audio-specifications/
+
+## Corrections and additions after verification (21 Nov 2026, verifier V1)
+1. No value failed (48 rows PASS).
+2. EBU R128 s1 was opened (PDF, version 3, August 2020): -23.0 LUFS, max short-term -18.0 LUFS, -1 dBTP - now OFFICIAL.
+3. Unity playables: "must support ... (MRAID) 3.0" read on the official page - now OFFICIAL.
+4. AppLovin spec URL now: https://support.applovin.com/en/growth/promoting-your-apps/welcome-to-applovin/creative-specs-and-guidelines
+5. Spotify loudness: audio ads -16 LUFS (+/-1.5); video ads RMS -14 dBFS, peak -0.2 dBFS - two different formats.
+6. Cinema loudness: DCM and Pearl & Dean 82 Leq(m); Screenvision 78 pre-show and 82 in trailer position; NCM -24 LKFS / -10 dBFS.
+7. Playable ads: Unity MRAID 3.0, AppLovin MRAID v2.0, Meta no mraid.js - three separate builds.
+8. Not re-read: OpenRTB, RAB, Acast, IAB podcast, ironSource, EU AI Act. Print was never researched.

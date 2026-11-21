@@ -1,6 +1,6 @@
 # 03 - Meta, TikTok and other social PAID ad specs
 
-Read: 20-21 Nov 2026. STATUS: DRAFT - NOT YET VERIFIED. Do not copy any number into a skill until `15-verification-log.md` shows it PASS.
+Read: 20-21 Nov 2026. STATUS: PARTLY VERIFIED 21 Nov 2026 (verifier V1, no FAIL). Rows re-read are listed in `verification/V1-media-specs.md`; rows not re-read are still DRAFT. Platform specs change often - re-open the source link before delivery.
 Tags per fact: OFFICIAL / VENDOR / COMMUNITY / INFERENCE / UNKNOWN. "SNIPPET ONLY" = seen in a search result, page not opened.
 Origin: sub-agent report `research-raw/R1c-meta-tiktok-social-ad-specs.md`, reformatted only (no fact added or removed by the main agent).
 
@@ -161,3 +161,10 @@ Instagram Reels ads "should not contain" (OFFICIAL, same Reels page): "Licensed 
 9. https://ads.tiktok.com/help/article/tiktok-reservation-topview
 10. https://help.pinterest.com/en/business/article/pinterest-product-specs
 (also: https://www.linkedin.com/help/lms/answer/a424737 ; https://www.facebook.com/business/help/298000447747885)
+
+## Corrections and additions after verification (21 Nov 2026, verifier V1)
+1. No value failed (43 rows PASS).
+2. Meta bottom safe zone: 35% standard; 40% only when the Reels ad carries disclaimers. Messenger Stories: 14% (250 pixels) top and bottom.
+3. Instagram Feed carousel: for Boost, video carousels are supported in 1:1 or 4:5.
+4. TikTok: auction non-Spark at least 516 kbps and up to 10 minutes; reservation and TopView at least 2,500 kbps and 5-60 s. Spark: no spec limits, but the organic post must be 10 minutes or less.
+5. Not re-read: Facebook search / right column / Business Explore, collections, branded content page, TikTok Ad Network, Branded Mission, Commercial Music Library; Snapchat, X and Reddit rows are still SNIPPET ONLY.

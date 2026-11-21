@@ -1,6 +1,6 @@
 # 02 - YouTube ads and Google Ads creative specs
 
-Read: 20-21 Nov 2026. STATUS: DRAFT - NOT YET VERIFIED. Do not copy any number into a skill until `15-verification-log.md` shows it PASS.
+Read: 20-21 Nov 2026. STATUS: PARTLY VERIFIED 21 Nov 2026 (verifier V1, no FAIL). Rows re-read are listed in `verification/V1-media-specs.md`; rows not re-read are still DRAFT. Platform specs change often - re-open the source link before delivery.
 Tags per fact: OFFICIAL / VENDOR / COMMUNITY / INFERENCE / UNKNOWN. "SNIPPET ONLY" = seen in a search result, page not opened.
 Origin: sub-agent report `research-raw/R1b-youtube-google-ads-specs.md`, reformatted only (no fact added or removed by the main agent).
 
@@ -127,3 +127,11 @@ Formats listed: skippable in-stream, non-skippable in-stream, in-feed, bumper, M
 8. https://support.google.com/google-ads/answer/17141078
 9. https://support.google.com/google-ads/answer/17140115 (and adspolicy /17257106, /6014595)
 10. https://support.google.com/google-ads/answer/10581234
+
+## Corrections and additions after verification (21 Nov 2026, verifier V1)
+1. No value failed (41 rows PASS, including the safe-zone pixel values read from the rendered diagrams).
+2. Non-skippable length: the policy page governs - 30 seconds in auction, 60 seconds in reservation; standard 7-15 s, 16-30 s on connected TV only.
+3. AI-label regions: use six (EU, India, New York, California, South Korea, Vietnam); the three-region text is the dated 9 July 2026 notice.
+4. Demand Gen logo: 144x144 is the safe minimum.
+5. Shorts ads longer than 60 seconds: Google's two pages still disagree; keep Shorts ads under 60 seconds.
+6. Not re-read: responsive display, search ads, AdMob interstitial / app-open / rewarded, ABCD.

@@ -1,6 +1,6 @@
 # 01 - TV, cable, streaming and connected-TV ad delivery specs (global)
 
-Read: 20-21 Nov 2026. STATUS: DRAFT - NOT YET VERIFIED. Do not copy any number into a skill until `15-verification-log.md` shows it PASS.
+Read: 20-21 Nov 2026. STATUS: PARTLY VERIFIED 21 Nov 2026 (verifier V1, no FAIL). Rows re-read are listed in `verification/V1-media-specs.md`; rows not re-read are still DRAFT. Platform specs change often - re-open the source link before delivery.
 Tags per fact: OFFICIAL / VENDOR / COMMUNITY / INFERENCE / UNKNOWN. "SNIPPET ONLY" = seen in a search result, page not opened.
 Origin: sub-agent report `research-raw/R1a-tv-streaming-ctv-specs.md`, reformatted only (no fact added or removed by the main agent).
 
@@ -195,3 +195,13 @@ COMMUNITY / SNIPPET ONLY: a major revision was put out for public comment on 11 
 8. https://clearcast.co.uk/wp-content/uploads/2024/07/Clearcast-Library-Technical-Specification-Guide-v1.6.pdf
 9. https://helpcenter.xr.global/hc/en-us/articles/5758928813332-North-America-Broadcast-Specifications-and-Requirements
 10. https://cdn-2.4sales.com/staging/2025-11/dpp012-production-and-post-production-commercial-guidance-v2.0%5B43%5D.pdf (plus https://help.dsp.samsungads.com/docs/video and the blocked NBCU scrollhelp URL above)
+
+## Corrections and additions after verification (21 Nov 2026, verifier V1)
+1. No value failed (49 rows PASS; NBCU / Peacock and the EBU R128 landing page could not be opened; Disney duration and loudness are still snippet-only).
+2. Paramount spec URL now: https://adsmanager.paramount.com/resources/tech-specs
+3. DPP012 document date: "V2.0 17-05-2025".
+4. UK slate: 7 seconds of clock + 3 seconds of black = 10 seconds before 10:00:00:00 (Clearcast and DPP describe the same layout).
+5. True peak by destination: UK aim -3 dBTP, fail above -1 dBTP; US broadcast via XR below -2 (recommended below -6); Netflix -2 dBFS; Paramount and IAB -6.
+6. Loudness tolerance: UK TV (DPP) -23.0 LUFS +/-0.2 LU; IAB EU +/-1.0; US platforms -24 +/-2.
+7. Roku: Ads Manager self-serve accepts 6-92 seconds; the general Advertising Guidelines say :15 or :30. Both current.
+8. Vendor conflict found: Cape news page says Sky Adsmart needs 7 working days; Cape UK overview says 5 days.
