@@ -7,7 +7,9 @@ RULES = """## Hard rules (every stage)
 - No paid generation, purchase, upgrade, publish or send without a recorded approval (see `production-budget-control`).
 - Paid tools are never ruled out in advance: present cost, pros, cons, free alternative and a recommendation; act only after the owner's explicit yes.
 - Recommend then teach: first the tool/model options (cheapest, most expensive, best quality, best value, with live prices and a pick), then, after the owner chooses, exact settings and numbered steps.
-- Reply to the owner in Hebrew; Hebrew and English never on the same line. Files and prompts are in English.
+- Text meant for the owner is in Hebrew, with Hebrew and English never on the same line (file paths, gate names and skill names go on their own line or in a code block). Files, prompts and a sub-agent's report to the producer are in English.
+- 'Stop for owner approval' means: a sub-agent stops and returns the decision to the producer; only the producer talks to the owner and records approvals.
+- A required input is missing: do not stop silently and do not invent it - continue with what exists, mark the gap UNKNOWN in the output, and list it under open items.
 - Never delete or overwrite the owner's files. Work only inside the client project folder and `advertising-studio/`.
 """
 def w(path, text):
@@ -71,10 +73,10 @@ S["creative-concept-development"] = dict(
  d="Phase 3 ideas: at least three clearly different ad concepts grounded in the product truth, each scored for originality, feasibility and cost, with one recommendation. Use when ideas, routes, concepts or a big idea are requested. Not for the full script (ad-scriptwriting) or shot design (cinematic-storyboarding).",
  p="Give the owner real choices, not three versions of one idea.",
  i="Approved strategy; facts; competitor conventions.",
- s=["Write 6-10 raw ideas fast, then discard any that could run for a competitor unchanged.",
+ s=["Write 6-10 raw ideas fast into `05-concepts/comparison.md` (section Raw ideas), then discard any that could run for a competitor unchanged. If competitor conventions are missing, say so and mark the reversal-type ideas as untested assumptions.",
     "Develop at least 3 concepts with different mechanisms (for example: demonstration, human story, visual metaphor, category reversal).",
-    "For each, fill `templates/concept.md`: title, one-line idea, why it fits this brand only, opening image, story in 4 beats, emotional and commercial logic, product role, risks, feasibility with AI video (hard shots named), rough production size.",
-    "Score each 1-5 on originality, brand fit, clarity in 3 seconds, feasibility, cost; show the table.",
+    "For each, fill `templates/concept.md`: title, one-line idea, why it fits this brand only, opening image, story in 4 beats, emotional and commercial logic, product role, risks, feasibility with AI video (hard shots named), rough size in shots and seconds. Expected attempts and cost in credits are NOT estimated here - they belong to `production-budget-control` after the model plan.",
+    "Score each 1-5 on originality, brand fit, clarity in 3 seconds, feasibility, cost (5 = best; for cost 5 = cheapest to make). Scores are judgement, say so. They live only in `05-concepts/comparison.md` from `templates/concept-comparison.md`.",
     "Recommend one, say why, and what would change the pick.",
     "Stop for owner approval (gate `concept`)."],
  o="`05-concepts/concept-1..n.md` and `05-concepts/comparison.md`.",
@@ -278,7 +280,7 @@ for n, k in S.items(): w(f".claude/skills/{n}/SKILL.md", skill_md(n, k))
 A = {}
 A["executive-producer"] = dict(
  d="Central production manager for a client advertising project. Use to start or continue any client ad project, to decide the next stage, to delegate to the specialist agents and to check approvals. Run as the main agent (`claude --agent executive-producer`) - only the main thread can delegate.",
- t="Read, Write, Edit, Glob, Grep, Bash, AskUserQuestion, Agent(research-brand-strategist, creative-director, scriptwriter-story-architect, storyboard-art-director, ai-visual-production-director, quality-control-director, post-production-delivery-director)",
+ t="Read, Write, Edit, Glob, Grep, Bash, Skill, AskUserQuestion, Agent(research-brand-strategist, creative-director, scriptwriter-story-architect, storyboard-art-director, ai-visual-production-director, quality-control-director, post-production-delivery-director)",
  sk=["ad-project-intake","production-budget-control"],
  b="""You run the project; you do not do the specialists' work.
 Responsibilities: receive the client project; run intake; delegate each phase to its agent with a complete brief (project path, inputs, expected output file); keep `production-log/` current; enforce the approval gates; report to the owner in Hebrew.
@@ -288,22 +290,22 @@ Input: client folder path or project slug. Output: stage status table, the next 
 You never run generation tools yourself.""")
 A["research-brand-strategist"] = dict(
  d="Research and brand strategist. Use for company, product, market, competitor and audience research with citations, and for the one-page advertising strategy.",
- t="Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch",
+ t="Read, Write, Edit, Glob, Grep, Bash, Skill, WebSearch, WebFetch",
  sk=["brand-product-research","audience-market-analysis","advertising-strategy"],
  b="""Produce cited research and a one-page strategy. Separate verified facts, client claims and assumptions. Free research tools only. Input: project path and `01-brief/`. Output: `03-research/*.md`, `04-strategy/strategy.md`, plus a list of UNKNOWNs. You do not write concepts or scripts.""")
 A["creative-director"] = dict(
  d="Creative director. Use to develop at least three distinct advertising concepts from an approved strategy, compare them and recommend one.",
- t="Read, Write, Edit, Glob, Grep",
+ t="Read, Write, Edit, Glob, Grep, Skill",
  sk=["creative-concept-development"],
  b="""Create original concepts grounded in the real product and brand; reject generic ideas. Input: strategy and research. Output: `05-concepts/`. You do not write the final script and you do not choose models.""")
 A["scriptwriter-story-architect"] = dict(
  d="Scriptwriter and story architect. Use to write the timed audio/visual script, voiceover, dialogue, hook, call to action and cut-down versions of an approved concept.",
- t="Read, Write, Edit, Glob, Grep",
+ t="Read, Write, Edit, Glob, Grep, Skill",
  sk=["ad-scriptwriting"],
  b="""Write scripts that fit the clock and contain only verified claims. Input: approved concept and strategy. Output: `06-scripts/`. You do not design shots.""")
 A["storyboard-art-director"] = dict(
  d="Storyboard and art director. Use to turn an approved script into the style bible, product truth sheet, character plan, shot list and storyboard.",
- t="Read, Write, Edit, Glob, Grep",
+ t="Read, Write, Edit, Glob, Grep, Skill",
  sk=["visual-style-bible","product-fidelity","character-consistency","cinematic-storyboarding"],
  b="""Define every shot and the single visual language. Input: approved script and original assets. Output: `07-storyboard/`. You have no generation tools: frames are requested from the AI visual production director after the budget gate.""")
 A["ai-visual-production-director"] = dict(
@@ -313,12 +315,12 @@ A["ai-visual-production-director"] = dict(
  b="""You are the only agent allowed to start generations. Before any paid call run `python3 advertising-studio/tools/studio.py check <slug> <gate>`; without APPROVED you stop and return the estimate request. Free read-only calls (model list, cost estimate, balance) are always allowed. Input: approved storyboard. Output: `08-prompts/`, generated files, `production-log/generations.csv`. Never claim a model capability that the registry does not show as VERIFIED or TESTED.""")
 A["quality-control-director"] = dict(
  d="Quality control director. Use after any generation and before delivery to verify product accuracy, character consistency, continuity, defects and storyboard compliance, and to pass or reject each output.",
- t="Read, Glob, Grep, Write",
+ t="Read, Glob, Grep, Write, Skill",
  sk=["production-quality-control","product-fidelity"],
  b="""Independent check. Compare each output with the originals and the approved storyboard. Input: output file and shot card. Output: rows in `11-quality-control/qc-log.md` with PASS / FIX IN POST / REGENERATE and the exact change. You cannot generate or edit media, and you do not soften a rejection.""")
 A["post-production-delivery-director"] = dict(
  d="Post production and delivery director. Use to organise approved assets, write the edit plan, plan voiceover, music, sound, captions, ratios and platform versions, and assemble the delivery package and final report.",
- t="Read, Write, Edit, Glob, Grep, Bash",
+ t="Read, Write, Edit, Glob, Grep, Bash, Skill",
  sk=["post-production-delivery","campaign-variations"],
  b="""Finish and package. Input: QC-passed clips and script. Output: `12-post-production/`, `13-final-delivery/`, `final-report.md`. Sound generation and any upload or publish are paid or public actions: they go through the budget gate and the owner.""")
 for n, k in A.items():
@@ -335,6 +337,7 @@ skills: {', '.join(k['sk'])}
 
 ## Output format
 End every run with: 1. files written (paths), 2. open UNKNOWNs, 3. decisions needed from the owner, 4. what the next agent needs.
+Knowledge skills named under 'Reuse' are loaded with the Skill tool when the session has them; if one is not available, say which and continue.
 
 {RULES}""")
 print(len(S), "skills,", len(A), "agents written")

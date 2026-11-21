@@ -54,3 +54,13 @@ Note: T11 prints exit=0 because the test piped the output; the message shows the
 
 ## First real test to do
 Start `claude --agent executive-producer` in this folder with a small sample brief and confirm: (1) it delegates research to research-brand-strategist, (2) it stops at the strategy gate, (3) a Higgsfield command shows a permission prompt.
+
+## Live agent test 1 (21 Nov 2026) - creative-director on a fictional sample project - PASSED with fixes
+What ran: the `creative-director` project agent was started from the main session on `client-projects/zz-sample-test` (fictional honey brand, facts + strategy only).
+Observed:
+- The agent loaded; its skill `creative-concept-development` arrived preloaded with the hard rules; both CLAUDE.md files were injected.
+- It wrote 3 concepts with different mechanisms + a comparison, recommended one, recorded no approval, ran nothing paid.
+- It did NOT use the fact marked UNKNOWN (health benefits) and kept the unproven client claim out of every concept.
+- It had no way to load the owner's knowledge skills (no Skill tool).
+Fixes made after the test: Skill tool added to all agents; rule for missing inputs (continue, mark UNKNOWN); attempts/credits removed from the concept template (belongs to budget control); cost score direction defined; comparison template added; scores kept in one place; language rule clarified (owner-facing Hebrew, agent-to-producer English); "stop for approval" defined for sub-agents.
+Still not tested: the other six specialists, delegation started by the executive-producer itself, the permission prompts, model selection against a live list.
