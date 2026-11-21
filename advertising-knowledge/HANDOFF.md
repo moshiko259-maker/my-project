@@ -95,3 +95,9 @@ LESSONS
 - Model registry now holds live Higgsfield settings and credit prices (read 21 Nov 2026); quality scores still empty.
 - Pending edit to a saved skill: ai-video-legal-consent-labels lists three regions for Google's visible AI label; verified current list is six.
 - YouTube refuses playback from this cloud network (asks for sign-in); unread videos need the owner's pasted transcripts or a session on his computer.
+
+## Addendum 4, 21 Nov 2026 08:45 UTC
+- VERIFIED in the synced copies: the owner saved the general-rule section in all 108 creative skills (present exactly once each). The 8 new skills are identical to the drafts.
+- Remaining: skill-drafts/FOLLOW-UP-EDITS.md (hub line in 13 skills - the Hebrew guide had omitted it; Google AI-label regions in the legal skill).
+- The owner's computer holds package v3; v4 adds the code gate (gate_hook.py, settings hook), new templates and registry readings - he should replace the folder with v4.
+- Three studio skills in the account are older than the folder's versions (ad-project-intake, ad-scriptwriting, advertising-strategy) - owner's decision whether to remove them from the account.
